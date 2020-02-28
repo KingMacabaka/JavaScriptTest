@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //string对象的创建方法
+      var txt = new String('我是字符串')
+      var txt = '我是字符串'
+      // var winInnerHeight = window.innerHeight //返回窗口文档显示区高度
+      // var winInnerWidth = window.innerWidth //返回窗口的文档显示区的宽度
+      // var winQuterWidth = window.outerWidth //返回窗口的外部宽度，饱汉工具条与滚动条
+      // var winOuterHeifht = window.outerHeight //返回窗口的外部高度，饱汉工具条与滚动条
+      // var winScreenLeft = window.screenLeft //返回相对于屏幕窗口的x坐标
+      // var winScreenTop = window.screenTop //返回相对于屏幕窗口的y坐标
+      // console.log(winInnerHeight)
+      // console.log(winInnerWidth)
+      // console.log(winQuterWidth)
+      // console.log(winOuterHeifht)
+      // console.log(winScreenLeft)
+      // console.log(winScreenTop)
+
+      // alert('hello world')
+      // window.alert('hello world')
+
+      //打开一个新的窗口
+      // function open_win() {
+      //   window.open('http://baidu.com')
+      // }
+      // function openWin() {
+      //   myWindow = window.open('', '', 'width=200,height=100')
+      //   myWindow.document.write('<p>这是我的窗口</p>')
+      // }
+      // openWin()
+
+      // var myWindow = window.open('', '', 'width=200,height=100')
+      // myWindow.document.write('<p>这是一个新的窗口</p>')
+      // setTimeout(function() {
+      //   myWindow.close()
+      // }, 3000)
+
+      //使用clearTimeout()来阻止函数的进行
+      // var myVar
+      // function myFunction() {
+      //   myVar = setTimeout(function() {
+      //     alert('hello')
+      //   }, 3000)
+      // }
+
+      // function myStopFunction() {
+      //   clearTimeout(myVar)
+      // }
+
+      //json实例
+      // var text =
+      //   '{"employees":[{"name":"baidu","site":"http://baidu.com"},{"name":"google","site":"http://google.com"},{"name":"taobao","site":"http://taobao.com"}]}'
+      // var obj = JSON.parse(text)
+
+      // console.log(obj)
+
+      //带reviver的案例
+      // var a = JSON.parse('{"p":5,"s":1.5,"t":-3}', function(k, v) {
+      //   if (k === '') return v
+      //   return v * 2
+      // })
+      // console.log(a)
+
+      //测试reiver函数的遍历顺序
+      // JSON.parse('{"p":5,"s":1.5,"t":-3}', function(k, v) {
+      //   console.log(k)
+      //   return v
+      // })
+
+      //JSON。parse()不允许以逗号作为结尾
+      // JSON.parse("[1,2,3,4,5,]")
+      // JSON.parse('{"foo":1,}')
+
+      //JSON.stringify()用于将JavaScript值转换为json字符串
+      // var str = { name: 'baidu', site: 'http://baidu.com' }
+      // str_pretty1 = JSON.stringify(str)
+      // document.write('只有一个参数情况')
+      // document.write('<br>')
+      // document.write('<pre>' + str_pretty1 + '</pre>')
+      // document.write('<br>')
+      // str_pretty2 = JSON.stringify(str, null, 4)
+      // document.write('使用参数情况')
+      // document.write('<br>')
+      // document.write('<pre>' + str_pretty2 + '</pre>')
+
+      //math对象
+      // console.log(Math.PI)
+
+      //计算一个数字的平方根
+      // var number = Math.sqrt(4)
+      // console.log(number)
+
+      // var n = prompt('请输入一个数字:', '')
+      // var answer = Math.sqrt(n)
+      // alert('数字' + n + '的平方根是：' + answer)
+
+      //floor方法--返回小于或等于一个给定数字的最大整数(向下取整)
+      // console.log(Math.floor(45.95))
+      // console.log(Math.floor(45.05))
+      // console.log(Math.floor(4))
+      // console.log(Math.floor(-45.05))
+      // console.log(Math.floor(-45.95))
+
+      //random函数——返回介于0（包含）~1（不包含）之间的一个随机数
+      // console.log(Math.random())
+
+      //返回一个四舍五入之后最接近的整数
+      // console.log(Math.round(20.49))
+      // console.log(Math.round(20.5))
+      // console.log(Math.round(-20, 5))
+      // console.log(Math.round(-20.51))
+
+      //创建日期
+      // var d1 = new Date(864000000)
+      // var d2 = new Date('October 19,2017 15:56:00')
+      // var d3 = new Date(88, 5, 11, 11, 42, 0, 0)
+      // console.log(d1)
+      // console.log(d2)
+      // console.log(d3)
+
+      // var d = new Date()
+      // var hours = d.getHours()
+      // console.log(hours)
+
+      // function printTime() {
+      //   var d = new Date()
+      //   var hours = d.getHours()
+      //   var mins = d.getMinutes()
+      //   var secs = d.getSeconds()
+      //   console.log(hours + ':' + mins + ':' + secs)
+      // }
+      // setInterval(printTime, 1000)
+    </script>
+  </head>
+  <body>
+    <h1>JavaScript练习页面————JavaScript核心对象</h1>
+  </body>
+</html>

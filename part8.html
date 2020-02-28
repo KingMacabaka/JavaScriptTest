@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #box {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(202, 103, 103);
+        position: absolute;
+      }
+      #container {
+        width: 100%;
+        height: 1000px;
+        background-color: gray;
+        position: relative;
+      }
+      #img {
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+    <script>
+      //   实现小动画
+      //   window.onload = function() {
+      //     var pos = 0
+      //     var box = document.getElementById('box')
+      //     var t = setInterval(move, 10)
+      //     function move() {
+      //       if (pos >= 800) {
+      //         clearInterval(t)
+      //       } else {
+      //         pos += 1
+      //         box.style.left = pos + 'px'
+      //       }
+      //     }
+      //   }
+
+      //等待页面dom结构全部加载完毕，然后开始执行方法
+      //   window.onload = function() {
+      //     var elem = document.getElementById('box')
+      //     elem.innerHTML = 'helloworld'
+      //   }
+
+      //   获取多个元素
+      //   window.onload = function() {
+      //     var arr = document.getElementsByClassName('tips')
+      //     console.log(arr[1].innerHTML)
+      //   }
+
+      //通过获取父节点，来更改子节点
+      //   window.onload = function(){
+      //       var a = document.getElementById("demo")
+      //       var arr = a.childNodes
+      //       for(var x = 0;x<arr.length;x++){
+      //           arr[x].innerHTML = '新的文本'
+      //       }
+      //   }
+      //通过更改属性，切换图片
+      // window.onload = function() {
+      //   var e1 = document.getElementById('img')
+      //   var e = e1.childNodes
+      //   console.log(e)
+      //   e.src = '2.jpg'
+      // }
+      //更换超链接
+      // var el = document.getElementsByTagName('a')
+      // el[0].href = 'http://google.com'
+      // el[0].innerHTML = 'google'
+
+      //更换样式
+      // var x = document.getElementById('demo')
+      // x.style.color = 'black'
+      // x.stlye.width = '100px'
+
+      //添加和移除元素
+      // var p = document.getElementById('p')
+      // var node = document.createTextNode('一些新的文本')
+      // p.appendChild(p)
+
+      //移除
+      // var parent  = document.getElementById("demo")
+      // var child = documnet.getElementById("p")
+      // parent.removeChild(child)
+
+      //替换
+      // var p = document.createElement('p')
+      // var node = document.createTextNode('这是新的文本')
+      // p.appendChild(node)
+      // var parent = document.getElementById('demo')
+      // var child = document.getElementById('p')
+      // parent.replaceChild(p, child)
+    </script>
+  </head>
+  <body>
+    <h1>JavaScript练习页面————DOM</h1>
+    <div id="container">
+      <a href="http://baidu.com">百度</a>
+      <!-- <div id="box">123</div> -->
+      <div class="tips">我是第一个</div>
+      <div class="tips">我是第二个</div>
+      <div class="tips">我是第三个</div>
+      <div id="img">
+        <img src="1.jpg" alt="" style="width: 100%;height: 100%;" />
+      </div>
+      <div id="demo">
+        <p>一些文本</p>
+        <p>另一些文本</p>
+      </div>
+    </div>
+  </body>
+</html>

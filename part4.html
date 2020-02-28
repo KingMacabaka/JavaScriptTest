@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function testMethods() {
+        console.log(1)
+      }
+      testMethods()
+      //隐藏参数
+      function sum() {
+        console.log(arguments[0] + arguments[1])
+      }
+      sum(1, 2)
+      //局部变量
+      // function testMethods2() {
+      //   var a = 2
+      // }
+      // console.log(a)
+
+      //全局变量
+      var a = 2
+      function testMethods3() {
+        console.log(a)
+      }
+      testMethods3()
+      //弹出框————输入信息
+      var user = prompt('请输入你的名字')
+      alert(user)
+      //弹出框——确认
+      var result = confirm('你确认吗')
+    </script>
+  </head>
+  <body>
+    <h1>JavaScript练习页面————JavaScript函数</h1>
+  </body>
+</html>

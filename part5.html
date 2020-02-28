@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //获取对象中的属性
+      // var person = {
+      //   name: '123',
+      //   mobile: '123123',
+      //   eat: function() {
+      //     console.log('在吃东西')
+      //   }
+      // }
+      // console.log(person['name'])
+
+      //更换对象中 的属性
+      // person['name'] = '456'
+      // console.log(person['name'])
+
+      //删除属性
+      // delete person['name']
+      // console.log(person['name'])
+
+      //调用对象中 的方法
+      // person['eat']()
+
+      //对象构造
+      // function person(name, age) {
+      //   this.name = name
+      //   this.age = age
+      // }
+      // var a = new person('名字', '年龄')
+      // console.log(a['age'])
+
+      //对象初始化
+      // var john = { name: 'john', age: '20' }
+      // console.log(john['name'])
+
+      //在构造函数中 定义方法
+      // function person(name, age) {
+      //   this.age = age
+      //   this.name = name
+      //   this.changeName = function(name) {
+      //     this.name = name
+      //   }
+      // }
+      // var p = new person('john', '20')
+      // p.changeName('make')
+      // console.log(p['name'])
+
+      //在构造函数外部定义一个方法，在内部进行调用
+      function person(name, age) {
+        this.name = name
+        this.age = age
+        this.changeName = changeName
+      }
+      function changeName(name) {
+        john['name'] = 'john'
+      }
+      var john = new person('mike', '20')
+      john['changeName'](john)
+      console.log(john['name'])
+    </script>
+  </head>
+  <body>
+    <h1>JavaScript练习页面————JavaScript对象</h1>
+  </body>
+</html>
